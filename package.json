@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild": "copy dist\\index.html dist\\404.html",
+    "postbuild": "node scripts/create-404.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
